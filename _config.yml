@@ -19,7 +19,7 @@ title                      : "daifu's recording"
 title_separator       : "-"
 subtitle                 : something not important
 name                    : "daifu"
-description            : "不一定对"
+description            : "i might be wrong"
 url                        : "https://woshidaifu.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository              : "woshidaifu/woshidaifu.github.io"
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name            : "daifu"
-  avatar           : "/assets/images/bio.png"
+  avatar           : "/assets/images/poggi.jpeg"
   bio                : "不一定对"
   location         : "Shanghai"
   email            : "pflee@live.com"
@@ -251,7 +251,7 @@ whitelist:
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: jekyll-archives
+  type: liquid
   path: /categories/
 tag_archive:
   type: liquid
