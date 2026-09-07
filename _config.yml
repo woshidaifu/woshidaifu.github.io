@@ -3,7 +3,7 @@
 # 2026-09-07 重构
 
 # Theme Settings
-remote_theme       : "minimal-mistakes-jekyll"
+remote_theme       : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin : "air"
 
 # Site Settings
@@ -90,6 +90,9 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false

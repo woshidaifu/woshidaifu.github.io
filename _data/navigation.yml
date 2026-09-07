@@ -1,10 +1,14 @@
-# main links
+# main links - 顶部导航
 main:
-  - title: "About"
-    url:  /about/
+  - title: "首页"
+    url: /
   - title: "Posts"
+    url: /posts/
+  - title: "归档"
     url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Tags"
+    url: /tags/
+  - title: "Stack"
+    url: /stack/
+  - title: "About"
+    url: /about/
