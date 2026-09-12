@@ -11,6 +11,12 @@
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
+        {% if page.url == "/" %}
+          <span class="terminal-status" aria-label="site status">
+            <span class="terminal-status__dot" aria-hidden="true"></span>
+            <span class="terminal-status__text">online</span>
+          </span>
+        {% endif %}
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">

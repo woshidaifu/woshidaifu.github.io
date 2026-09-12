@@ -4,7 +4,7 @@
 
 # Theme Settings
 remote_theme       : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin : "air"
+minimal_mistakes_skin : "dark"
 
 # Site Settings
 locale        : "zh"
