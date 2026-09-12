@@ -6,3 +6,135 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Home page
+.home-page {
+  .home-hero {
+    padding: 4rem 0 3rem;
+    border-bottom: 1px solid $border-color;
+
+    .home-eyebrow {
+      margin: 0 0 0.75rem;
+      color: $primary-color;
+      font-size: $type-size-6;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .home-title {
+      margin: 0 0 0.75rem;
+      font-family: $sans-serif-narrow;
+      font-size: 2.5rem;
+      line-height: 1.1;
+    }
+
+    .home-lede {
+      max-width: 42rem;
+      margin: 0 0 1.5rem;
+      color: $muted-text-color;
+      font-size: $type-size-5;
+    }
+
+    .home-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+  }
+
+  .home-section {
+    padding: 2.5rem 0 4rem;
+
+    .home-section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      h2 {
+        margin: 0;
+        font-size: $type-size-5;
+      }
+
+      a {
+        color: $link-color;
+        font-size: $type-size-6;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .home-post-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .home-post-item {
+        padding: 1.25rem 0;
+        border-bottom: 1px solid $border-color;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .home-post-meta {
+          margin-bottom: 0.35rem;
+          color: $muted-text-color;
+          font-size: $type-size-7;
+        }
+
+        h3 {
+          margin: 0 0 0.4rem;
+          font-size: $type-size-5;
+          line-height: 1.35;
+
+          a {
+            color: $text-color;
+            text-decoration: none;
+
+            &:hover {
+              color: $link-color;
+            }
+          }
+        }
+
+        p {
+          margin: 0;
+          color: $muted-text-color;
+          font-size: $type-size-6;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-page {
+    .home-hero {
+      padding: 3rem 0 2.5rem;
+
+      .home-title {
+        font-size: 2rem;
+      }
+
+      .home-actions {
+        display: block;
+
+        .btn {
+          display: inline-block;
+          margin: 0 0.6rem 0.6rem 0;
+        }
+      }
+    }
+
+    .home-section {
+      padding: 2rem 0 3rem;
+    }
+  }
+}
